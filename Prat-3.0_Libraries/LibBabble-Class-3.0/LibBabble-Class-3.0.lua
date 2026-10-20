@@ -9,7 +9,7 @@ License: MIT
 ]]
 
 local MAJOR_VERSION = "LibBabble-Class-3.0"
-local MINOR_VERSION = 90000 + tonumber(("$Revision: 50 $"):match("%d+"))
+local MINOR_VERSION = 91000 + tonumber(("$Revision: 50 $"):match("%d+"))
 
 if not LibStub then error("LibBabble-Class-3.0 requires LibStub.") end
 local lib = LibStub("LibBabble-3.0"):New(MAJOR_VERSION, MINOR_VERSION)
@@ -26,6 +26,7 @@ lib:SetBaseTranslations {
 	Shaman = true,
 	Rogue = true,
 	Deathknight = "Death Knight",
+	Demonhunter = "Demon Hunter",
 
 	WARLOCK = true,
 	WARRIOR = true,
@@ -37,6 +38,7 @@ lib:SetBaseTranslations {
 	SHAMAN = true,
 	ROGUE = true,
 	DEATHKNIGHT = "Death Knight",
+	DEMONHUNTER = "Demon Hunter",
 }
 
 local l = GetLocale()
@@ -54,6 +56,7 @@ elseif l == "deDE" then
 		["Shaman"] = "Schamane",
 		["Rogue"] = "Schurke",
 		["Deathknight"] = "Todesritter",
+		["Demonhunter"] = "Demon Hunter",
 
 		["WARLOCK"] = "Hexenmeisterin",
 		["WARRIOR"] = "Kriegerin",
@@ -65,6 +68,7 @@ elseif l == "deDE" then
 		["SHAMAN"] = "Schamanin",
 		["ROGUE"] = "Schurkin",
 		["DEATHKNIGHT"] = "Todesritter",
+		["DEMONHUNTER"] = "Demon Hunter",
 	}
 elseif l == "frFR" then
 	lib:SetCurrentTranslations {
@@ -78,6 +82,7 @@ elseif l == "frFR" then
 		["Shaman"] = "Chaman",
 		["Rogue"] = "Voleur",
 		["Deathknight"] = "Chevalier de la mort",
+		["Demonhunter"] = "Demon Hunter",
 
 		["WARLOCK"] = "Démoniste",
 		["WARRIOR"] = "Guerrière",
@@ -89,6 +94,7 @@ elseif l == "frFR" then
 		["SHAMAN"] = "Chamane",
 		["ROGUE"] = "Voleuse",
 		["DEATHKNIGHT"] = "Chevalier de la mort",
+		["DEMONHUNTER"] = "Demon Hunter",
 	}
 elseif l == "zhCN" then
 	lib:SetCurrentTranslations {
@@ -102,6 +108,7 @@ elseif l == "zhCN" then
 		["Shaman"] = "萨满祭司",
 		["Rogue"] = "潜行者",
 		["Deathknight"] = "死亡骑士",
+		["Demonhunter"] = "Demon Hunter",
 
 		["WARLOCK"] = "术士",
 		["WARRIOR"] = "战士",
@@ -113,6 +120,7 @@ elseif l == "zhCN" then
 		["SHAMAN"] = "萨满祭司",
 		["ROGUE"] = "潜行者",
 		["DEATHKNIGHT"] = "死亡骑士",
+		["DEMONHUNTER"] = "Demon Hunter",
 	}
 elseif l == "zhTW" then
 	lib:SetCurrentTranslations {
@@ -126,6 +134,7 @@ elseif l == "zhTW" then
 		["Shaman"] = "薩滿",
 		["Rogue"] = "盜賊",
 		["Deathknight"] = "死亡騎士",
+		["Demonhunter"] = "Demon Hunter",
 
 		["WARLOCK"] = "術士",
 		["WARRIOR"] = "戰士",
@@ -137,6 +146,7 @@ elseif l == "zhTW" then
 		["SHAMAN"] = "薩滿",
 		["ROGUE"] = "盜賊",
 		["DEATHKNIGHT"] = "死亡騎士",
+		["DEMONHUNTER"] = "Demon Hunter",
 	}
 elseif l == "koKR" then
 	lib:SetCurrentTranslations {
@@ -150,6 +160,7 @@ elseif l == "koKR" then
 		["Shaman"] = "주술사",
 		["Rogue"] = "도적",
 		["Deathknight"] = "죽음의 기사",
+		["Demonhunter"] = "Demon Hunter",
 		
 		["WARLOCK"] = "흑마법사",
 		["WARRIOR"] = "전사",
@@ -161,6 +172,7 @@ elseif l == "koKR" then
 		["SHAMAN"] = "주술사",
 		["ROGUE"] = "도적",
 		["DEATHKNIGHT"] = "죽음의 기사",
+		["DEMONHUNTER"] = "Demon Hunter",
 	}
 elseif l == "esES" then
 	lib:SetCurrentTranslations {
@@ -174,6 +186,7 @@ elseif l == "esES" then
 		["Shaman"] = "Chamán",
 		["Rogue"] = "Pícaro",
 		["Deathknight"] = "Caballero de la muerte",
+		["Demonhunter"] = "Demon Hunter",
 		
 		["WARLOCK"] = "Bruja",
 		["WARRIOR"] = "Guerrera",
@@ -185,6 +198,7 @@ elseif l == "esES" then
 		["SHAMAN"] = "Chamán",
 		["ROGUE"] = "Pícara",
 		["Deathknight"] = "Caballero de la muerte",
+		["DEMONHUNTER"] = "Demon Hunter",
 	}
 elseif l == "esMX" then
 	lib:SetCurrentTranslations {
@@ -198,6 +212,7 @@ elseif l == "esMX" then
 		["Shaman"] = "Chamán",
 		["Rogue"] = "Pícaro",
 		["Deathknight"] = "Caballero de la muerte",
+		["Demonhunter"] = "Demon Hunter",
 		
 		["WARLOCK"] = "Bruja",
 		["WARRIOR"] = "Guerrera",
@@ -209,6 +224,7 @@ elseif l == "esMX" then
 		["SHAMAN"] = "Chamán",
 		["ROGUE"] = "Pícara",
 		["Deathknight"] = "Caballero de la muerte",
+		["DEMONHUNTER"] = "Demon Hunter",
 	}
 elseif l == "ruRU" then
 	lib:SetCurrentTranslations {
@@ -222,6 +238,7 @@ elseif l == "ruRU" then
 		["Shaman"] = "Шаман",
 		["Rogue"] = "Разбойник",
 		["Deathknight"] = "Рыцарь смерти",
+		["Demonhunter"] = "Охотник на демонов",
 		
 		["WARLOCK"] = "Чернокнижница",
 		["WARRIOR"] = "Воин",
@@ -233,6 +250,7 @@ elseif l == "ruRU" then
 		["SHAMAN"] = "Шаманка",
 		["ROGUE"] = "Разбойница",
 		["DEATHKNIGHT"] = "Рыцарь смерти",
+		["DEMONHUNTER"] = "Охотник на демонов",
 		
 	}
 else
